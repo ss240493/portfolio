@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midnight Corridor</title>
+    <link rel="stylesheet" href="Portfolio.CSS" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">Playable Horror Micro-Game</p>
+          <h1>Midnight Corridor</h1>
+        </div>
+        <div class="status">
+          <span id="statusText">Press Start to enter.</span>
+        </div>
+      </header>
+
+      <section class="game-area">
+        <canvas id="gameCanvas" width="640" height="480" aria-label="Horror game canvas"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="panel">
+            <h2 id="overlayTitle">Survive the corridor.</h2>
+            <p id="overlayBody">
+              Collect 3 keys, unlock the exit, and avoid the Shade. Use WASD or arrow keys to move.
+            </p>
+            <button id="startButton">Start</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hud">
+        <div class="hud-card">
+          <h3>Objectives</h3>
+          <ul>
+            <li>Find all 3 keys.</li>
+            <li>Reach the exit door.</li>
+            <li>Don’t let the Shade reach you.</li>
+          </ul>
+        </div>
+        <div class="hud-card">
+          <h3>Controls</h3>
+          <p>Move: WASD / Arrow keys</p>
+          <p>Pause: Spacebar</p>
+          <p>Restart: R</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="Portfolio.js"></script>
+  </body>
+</html>
